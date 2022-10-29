@@ -1,0 +1,203 @@
+*{
+
+padding: 0;
+margin: 0;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+body{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(21, 21, 22);
+
+}
+
+.Container{
+
+    width: 920px;
+    height: 280px;
+
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(rgb(51, 94, 121),rgb(105, 162, 196));
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+
+.obs{
+
+    width: 36px;
+    height: 50px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 600px;
+    z-index: 1;
+
+    background: url(/public/j.png) no-repeat;
+
+}
+
+.cloud{
+
+    width: 376px;
+    height: 107px;
+
+    position: absolute;
+    z-index: 1;
+
+    background: url(/public/cloud.png) no-repeat;
+    background-size: 163px 52px;
+
+
+}
+
+.Gm{
+
+
+text-align: center;
+color: brown;
+padding-top: 10px;
+font-size: 30px;
+display: none;
+z-index: 0;
+
+
+}
+
+.Gm:hover{
+
+
+opacity: 0.7;
+cursor: pointer;
+    
+    
+}
+
+.Dino{
+
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+
+    z-index: 2;
+
+    background: url(/public/dash.png) repeat-x 0 0;
+    background-size: 576px 96px;
+    background-position-x: 0px;
+    image-rendering: pixelated;
+
+
+}
+
+.Dead{
+
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+
+    z-index: 2;
+
+    background: url(/public/dead.png) repeat-x 0 0;
+    background-size: 576px 96px;
+    background-position-x: 0px;
+    image-rendering: pixelated;
+
+
+}
+
+.deaddino{
+
+    animation: anim 0.80s steps(5) infinite;
+    
+    
+}
+    
+@keyframes deadanim {
+    from{
+    
+        background-position-x: -81px;
+    
+    }to{
+    
+    
+            background-position-x: -576px;
+    
+    }
+}
+    
+
+.animdino{
+
+animation: anim 0.45s steps(6) infinite;
+
+
+}
+
+@keyframes anim {
+    from{
+
+        background-position-x: -11px;
+
+    }to{
+
+
+        background-position-x: -576px;
+
+    }
+}
+
+
+.Floor{
+
+width: 200%;
+height: 42px;
+
+
+position: absolute;
+bottom: 0;
+left: 0;
+
+background: url(/public/sss.png);
+
+
+}
+
+.Score{
+
+font-size: 50px;
+color: rgb(186, 207, 224);
+position: absolute;
+top: 10px;
+right: 10px;
+
+
+}
+
+.HighScore{
+
+    font-size: 30px;
+    color: rgb(186, 207, 224);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+     
+}
+.Hs{
+
+    font-size: 30px;
+    color: rgb(186, 207, 224);
+    position: absolute;
+    top: 10px;
+    right: 55px;
+     
+
+}
